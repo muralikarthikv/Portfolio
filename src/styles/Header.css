@@ -1,0 +1,143 @@
+/* General styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+.header {
+  background-color: #1a1a1a; /* Dark background color */
+  color: white;
+  padding: 20px 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem; /* Adjust font size as needed */
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none; /* Initially hide on larger screens */
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 15px; /* Space between the nav items */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00bcd4; /* Hover color */
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Initially hide the menu */
+  }
+
+  .nav-menu.open {
+    display: flex; /* Show the menu when open */
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Initially hide the menu */
+  }
+
+  .nav-menu.open {
+    display: flex; /* Show the menu when open */
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media (min-width: 769px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+  }
+
+  .nav-item {
+    margin: 0 15px;
+  }
+}

@@ -1,0 +1,183 @@
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-container h1 {
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-container h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .contact-container p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  button {
+    padding: 8px;
+  }
+
+  .social-links {
+    margin-top: 20px;
+  }
+
+  .social-links a {
+    margin: 0 5px;
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .contact-container {
+    padding: 30px;
+  }
+
+  .contact-container h1 {
+    font-size: 1.8em;
+    margin-bottom: 18px;
+  }
+
+  .contact-container p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 9px;
+    margin-bottom: 18px;
+  }
+
+  textarea {
+    height: 135px;
+  }
+
+  button {
+    padding: 9px;
+  }
+
+  .social-links {
+    margin-top: 25px;
+  }
+
+  .social-links a {
+    margin: 0 8px;
+  }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media (min-width: 769px) {
+  .contact-container {
+    padding: 40px;
+  }
+
+  .contact-container h1 {
+    font-size: 2em;
+  }
+
+  .contact-container p {
+    font-size: 1.2em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+  .social-links {
+    margin-top: 30px;
+  }
+
+  .social-links a {
+    margin: 0 10px;
+  }
+}
